@@ -1,101 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=640, initial-scale=0.5, minimal-ui"> -->
+		<title>Document</title>
 
-	<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main.css">
 
-	<script src="libs/gsap.min.js" defer></script>
-	<script src="libs/Draggable.min.js" defer></script>
-	<script src="libs/InertiaPlugin.min.js" defer></script>
-	<script src="js/app.js" defer></script>
+		<script src="libs/gsap.min.js" defer></script>
+		<script src="libs/Draggable.min.js" defer></script>
+		<script src="libs/InertiaPlugin.min.js" defer></script>
+		<script src="js/app.js" defer></script>
 
-	<style>
-		.gallery { opacity: 0; }
-	</style>
+		<style>
+			.gallery { opacity: 0; }
+		</style>
 
-</head>
-<body>
+	</head>
+	<body>
 
-	<h1 class="header">Нефедовы <span>Loading...</span></h1>
+		<h1 class="header">Нефедовы <span>Loading...</span></h1>
 
-	<!-- .gallery>(.gallery__item*20>img[src="img/$.jpg" alt="Alt"])*4 -->
+		<!-- .gallery>(.gallery__item*20>img[src="img/$.jpg" alt="Alt"])*4 -->
 
-	<div class="gallery">
-		<div class="gallery__item"><img src="photo/IMG_4616.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4622.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4624.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4636.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4649.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4662.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4686.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4698.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4699.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4709.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4746.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4750.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4783.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4804.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4814.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4818.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4828.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4834.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4865.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4871.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4888.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4930.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4936.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4969.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_4981.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5011.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5053.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5089.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5098.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5111.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5134.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5139.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5154.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5195.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5213.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5239.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5246.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5256.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5268.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5272.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5275.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5281.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5282.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/IMG_5283.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-32-07.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-31-21.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-31-17.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-31-11.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-30-40.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-47.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-46.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-45.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-44.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-41.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-40.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-39.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-37.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-42-57.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-33.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-32.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-31.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-29.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-28.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-27.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-25.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-24.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-38-15.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-38-45.jpg" alt="Alt"></div>
-		<div class="gallery__item"><img src="photo/photo_2022-07-14_21-39-27.jpg" alt="Alt"></div>
-	</div>
+		<div class="gallery">
+			<div class="gallery__item"><img src="photo/IMG_4616.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4622.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4624.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4636.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4649.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4662.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4686.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4698.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4699.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4709.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4746.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4750.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4783.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4804.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4814.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4818.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4828.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4834.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4865.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4871.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4888.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4930.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4936.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4969.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_4981.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5011.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5053.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5089.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5098.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5111.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5134.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5139.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5154.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5195.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5213.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5239.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5246.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5256.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5268.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5272.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5275.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5281.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5282.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/IMG_5283.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-32-07.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-31-21.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-31-17.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-31-11.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-30-40.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-47.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-46.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-45.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-44.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-41.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-40.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-39.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-37.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-42-57.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-33.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-32.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-31.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-29.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-28.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-27.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-25.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-29-24.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-38-15.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-38-45.jpg" alt="Alt"></div>
+			<div class="gallery__item"><img src="photo/photo_2022-07-14_21-39-27.jpg" alt="Alt"></div>
+		</div>
 
-</body>
+	</body>
 </html>
